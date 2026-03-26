@@ -22,19 +22,27 @@ export const TodoList = () => {
   };
 
   return (
-    <div className='text-center'>
-      <h1>todos</h1>
-      <div class="input-group flex-nowrap">
-        <input type="text" value={task} onChange={add} onKeyDown={addLi} className="form-control" placeholder="What needs to be done?" aria-label="Username" aria-describedby="addon-wrapping"/>
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className='col-4'></div>
+        <div className='col-4'>
+
+          <h1 className='text-center'>todos</h1>
+          <div >
+            <input type="text" value={task} onChange={add} onKeyDown={addLi} className="" placeholder="What needs to be done?" aria-label="Username" aria-describedby="addon-wrapping"/>
+          </div>
+          <ul>
+            {list.map((item, index) => (
+              <li key={index}>{item}
+                <span onClick={()=>deleteLi(index)}>x</span>
+              </li>
+            ))}
+          </ul>
+          <p className='paper'>{list.length}</p>
+
+        </div>
+        <div className='col-4'></div>
       </div>
-      <ul>
-        {list.map((item, index) => (
-          <li key={index}>{item}
-            <button onClick={()=>deleteLi(index)}>x</button>
-          </li>
-        ))}
-      </ul>
-      <p>{list.length}</p>
     </div>
   );
 };

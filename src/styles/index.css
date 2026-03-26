@@ -1,11 +1,80 @@
-/* 
+*{
+    
+     color: grey;
+     
+} 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body{
+    background-color: lightgrey;
+   
+}
 
-*/
+input{  
+    width: 100%;
+    outline: none; 
+    border: 0.5px solid #e0e0e0; 
+    padding: 10px;
+     color: grey;
+                 box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15);
+}
+
+ul{
+    list-style-type: none;
+    background-color: white;
+      list-style-type: none; /* Removes the dot */
+  padding-left: 0;       /* Removes the "ghost" space on the left */
+  margin-left: 0;   
+  margin-bottom: 0;
+
+  
+}
+
+li{
+          border: 0.5px solid #e0e0e0; 
+          padding: 10px;
+            box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15);
+}
+
+button{
+    border: none;
+}
+
+.paper {
+      border: 0.5px solid #e0e0e0; 
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 10px;
+}
+
+li span {
+  display: none;
+
+  margin-left: 10px;
+ 
+}
+
+/* 2. Show the span when hovering the parent li */
+li:hover span {
+  display: inline-block;
+}
+
+/* 3. Turn the span red when hovering the span itself */
+li span:hover {
+  color: red;
+  font-weight: bold;
+}
