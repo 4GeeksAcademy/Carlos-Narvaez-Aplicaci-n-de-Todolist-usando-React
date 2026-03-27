@@ -1,80 +1,82 @@
-*{
-    
-     color: grey;
-     
-} 
-
-body{
-    background-color: lightgrey;
-   
+* {
+  color: grey;
+  box-sizing: border-box;
 }
 
-input{  
-    width: 100%;
-    outline: none; 
-    border: 0.5px solid #e0e0e0; 
-    padding: 10px;
-     color: grey;
-                 box-shadow:
-    /* The top layer shadow */
-    0 1px 1px rgba(0,0,0,0.15);
+body {
+  background-color: lightgrey;
+  margin: 0;
 }
 
-ul{
-    list-style-type: none;
-    background-color: white;
-      list-style-type: none; /* Removes the dot */
-  padding-left: 0;       /* Removes the "ghost" space on the left */
-  margin-left: 0;   
-  margin-bottom: 0;
-
-  
+h1 {
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 30px;
 }
 
-li{
-          border: 0.5px solid #e0e0e0; 
-          padding: 10px;
-            box-shadow:
-    /* The top layer shadow */
-    0 1px 1px rgba(0,0,0,0.15);
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  color: grey;
+  outline: none;
+  border: 0.5px solid #e0e0e0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-button{
-    border: none;
+ul {
+  list-style-type: none;
+  background-color: white;
+  padding-left: 0;
+  margin: 0;
+  font-weight: 100;
 }
 
-.paper {
-      border: 0.5px solid #e0e0e0; 
-  background: #fff;
-  box-shadow:
-    /* The top layer shadow */
-    0 1px 1px rgba(0,0,0,0.15),
-    /* The second layer */
-    0 10px 0 -5px #eee,
-    /* The second layer shadow */
-    0 10px 1px -4px rgba(0,0,0,0.15),
-     /* The third layer */
-    0 20px 0 -10px #eee,
-    /* The third layer shadow */
-    0 20px 1px -9px rgba(0,0,0,0.15);
-    /* Padding for demo purposes */
-    padding: 10px;
+li {
+  font-size: 30px;
+  font-weight: 100;
+  color: grey;
+  background-color: #fff;
+  padding: 15px 25px;
+  border: 0.5px solid #e0e0e0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 li span {
   display: none;
-
   margin-left: 10px;
- 
+  cursor: pointer;
 }
 
-/* 2. Show the span when hovering the parent li */
 li:hover span {
   display: inline-block;
 }
 
-/* 3. Turn the span red when hovering the span itself */
 li span:hover {
   color: red;
-  font-weight: bold;
+}
+
+button {
+  border: none;
+}
+
+p {
+  font-size: 15px;
+}
+
+.paper {
+  background: #fff;
+  padding: 10px;
+  border: 0.5px solid #e0e0e0;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0, 0, 0, 0.15),
+    0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
 }

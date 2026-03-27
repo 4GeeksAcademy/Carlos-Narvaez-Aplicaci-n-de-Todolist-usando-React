@@ -24,24 +24,24 @@ export const TodoList = () => {
   return (
     <div className='container-fluid'>
       <div className='row'>
-        <div className='col-4'></div>
-        <div className='col-4'>
+        <div className='col-3'></div>
+        <div className='col-6'>
 
-          <h1 className='text-center'>todos</h1>
+          <h1 >todos</h1>
           <div >
-            <input type="text" value={task} onChange={add} onKeyDown={addLi} className="" placeholder="What needs to be done?" aria-label="Username" aria-describedby="addon-wrapping"/>
+            <input type="text" value={task} onChange={add} onKeyDown={addLi} className="ps-5" placeholder="What needs to be done?" aria-label="Username" aria-describedby="addon-wrapping"/>
           </div>
           <ul>
             {list.map((item, index) => (
-              <li key={index}>{item}
-                <span onClick={()=>deleteLi(index)}>x</span>
+              <li className='ps-5 d-flex justify-content-between align-items-center' key={index}>{item}
+                <span className='text-end' onClick={()=>deleteLi(index)}>X</span>
               </li>
             ))}
           </ul>
-          <p className='paper'>{list.length}</p>
+          <p className='paper'>{list.length} item left</p>
 
         </div>
-        <div className='col-4'></div>
+        <div className='col-3'></div>
       </div>
     </div>
   );
